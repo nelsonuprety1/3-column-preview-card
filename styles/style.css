@@ -2,6 +2,111 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
 
 
+:root {
+    --color-bright-orange: hsl(31, 77%, 52%);
+    --color-dark-cyan: hsl(184, 100%, 22%);
+    --color-very-dark-cyan: hsl(179, 100%, 13%);
+    --color-paragraph-white: hsla(0, 0%, 100%, 0.75);
+    --color-very-light-gray: hsl(0, 0%, 95%);
+    --font-1: 'Lexend Deca', 'Times New Roman', Times, serif;
+    --font-2: 'Big Shoulders Display', 'Times New Roman', Times, serif;
+    --font-weight-four: 400;
+    --font-weight-seven: 700;
+}
+
+.body {
+    background-color: var(--color-very-light-gray);
+    display: grid;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    border: 1px solid transparent;
+    max-width: 375px;
+    min-height: 950px;
+    /* margin-top: 40px; */
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+    /* overflow: hidden; */
+
+}
+
+.svgs {
+    /* display: block; */
+    margin-top: 25px;
+    padding-left: 25px;
+    margin-bottom: 15px;
+}
+
+.heading {
+    font-family: var(--font-2);
+    font-weight: var(--font-weight-seven);
+    color: var(--color-very-light-gray);
+    font-size: 1.5rem;
+    padding-left: 25px;
+    margin-bottom: 20px;
+}
+
+.section-1 {
+    background-color: var(--color-bright-orange);
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.section-2 {
+    background-color: var(--color-dark-cyan);
+}
+
+.section-3 {
+    background-color: var(--color-very-dark-cyan);
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.paragraph {
+    color: var(--color-paragraph-white);
+    font-family: var(--font-1);
+    font-weight: var(--font-1);
+    font-size: 0.7rem;
+    padding-left: 25px;
+    line-height: 1.5rem;
+}
+
+.btn-1,
+.btn-2,
+.btn-3 {
+    width: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 35px;
+    background-color: var(--color-very-light-gray);
+    border: 1px solid transparent;
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-left: 25px;
+    font-family: var(--font-1);
+    font-weight: var(--font-weight-four);
+    font-size: 0.7rem;
+}
+
+span {
+    display: block;
+}
+
+.btn-1 {
+    color: var(--color-bright-orange)
+}
+
+.btn-2 {
+    color: var(--color-dark-cyan)
+}
+
+.btn-3 {
+    color: var(--color-very-dark-cyan)
+}
+
 .attribution {
     margin-top: 30px;
     font-size: 11px;
